@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alura Dev</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="container">
+		<img class="logo" src="logo.png">
+		<input class="pesquisa" type="search" name="busca" placeholder="Busque por algo">
+		<img class="foto" src="harry.png">
+	</header>
+
+	<main>
+		<nav class="menuPrincipal">
+			<ul>
+				<h2>Menu</h2>
+				<li class="menu_navegacao">
+					<img src="icon_editor.png"><a href="index.html" target="_blank">Editor de Código</a>
+				</li>
+				<li class="menu_navegacao">
+					<img src="icon_comunidade.png"><a href="comunidade.html" target="_blank">Comunidade</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="borda_externa">
+			<div class="campo_codigo">
+				<div class="button">
+					<img src="mac_buttons.png" alt="Botões decorativos para simular um editor de código">
+				</div>
+				<div class="editor_codigo">
+					<textarea name="codigo" cols="40" rows="20" class="codigo"></textarea>
+				</div>
+				<div>
+					<button type="submit" id="visualizar">Visualizar com o highlight</button>
+				</div>
+			</div>
+		</section>
+
+		<form>
+			<div class="seuProjeto">
+				<h3 id="titulo">Seu Projeto</h3>
+				<input type="text" class="projeto" id="projeto" name="nome" placeholder="Nome do seu projeto">
+				<textarea cols="30" rows="20" placeholder="Descrição do seu projeto" class="projeto" id="descricao"></textarea>
+			</div>
+			<div class="personalizar">
+				<h3 id="titulo2">Personalização</h3>
+				<select class="projeto2" id="selecao">
+					<option class="opcoes">JavaScript</option>
+					<option class="opcoes">HTML</option>
+					<option class="opcoes">CSS</option>
+				</select>
+			</div>
+			<div class="escolha_cor">
+				<input type="color" id="cor" name="cor" value="#A90A41">
+			</div>
+			<button type="submit" value="Salvar projeto" id="botao">Salvar projeto</button>
+			
+		</form>	
+	</main>
+
+</body>
+</html>
